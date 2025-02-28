@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -53,26 +54,41 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>ABOUT US</a>
+            <Link to={"/"}>
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link to={"/about"}>
+              <a>ABOUT US</a>
+            </Link>
           </li>
           <li>
             <details>
               <summary>VISA SERVICES</summary>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <Link to={"/services"}>
+                    <a>Job Seeking</a>
+                  </Link>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <Link to={"/services"}>
+                    <a>Work Visa</a>
+                  </Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a>AUSBILDUNGS</a>
+            <Link to={"/ausbildung"}>
+              <a>AUSBILDUNG</a>
+            </Link>
           </li>
           <li>
-            <a>RECRUITERS</a>
+            <Link to={"/recruiter"}>
+              <a>RECRUITERS</a>
+            </Link>
           </li>
           <li>
             <a>STUDENTS</a>
