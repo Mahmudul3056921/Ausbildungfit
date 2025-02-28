@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-warning opacity-75 text-black rounded p-4 flex flex-col md:flex-row items-center justify-between">
+    <footer className="footer bg-warning opacity-75 text-black rounded my-2 p-4 flex flex-col md:flex-row items-center justify-between">
       {/* Left: Logo */}
       <div className="flex items-center">
         <img

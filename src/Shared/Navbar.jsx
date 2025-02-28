@@ -53,11 +53,11 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <a>ABOUT US</a>
           </li>
           <li>
             <details>
-              <summary>Parent</summary>
+              <summary>VISA SERVICES</summary>
               <ul className="p-2">
                 <li>
                   <a>Submenu 1</a>
@@ -69,12 +69,18 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>AUSBILDUNGS</a>
+          </li>
+          <li>
+            <a>RECRUITERS</a>
+          </li>
+          <li>
+            <a>STUDENTS</a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn btn-warning text-black opacity-75">LOGIN</a>
       </div>
     </div>
   );
