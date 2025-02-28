@@ -9,7 +9,7 @@ import bannerImg4 from "../assets/home/banner1.png";
 const Banner = () => {
   return (
     <Carousel
-      autoPlay
+      autoPlay={false}
       interval={5000}
       infiniteLoop
       showThumbs={false}
