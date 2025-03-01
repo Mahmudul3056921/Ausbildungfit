@@ -15,48 +15,84 @@ const Services = () => {
 
       {/* Services Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        {/* German Language Training */}
         <div className="card bg-yellow-500 text-black shadow-xl p-6">
           <h3 className="text-2xl font-bold">📚 জার্মান ভাষা প্রশিক্ষণ</h3>
           <p className="mt-2">
             A1, A2, B1, B2 লেভেল পর্যন্ত **সেরা প্রশিক্ষকদের মাধ্যমে জার্মান
             ভাষা শেখা**।
           </p>
+          <div className="mt-4 text-center">
+            <button className="btn bg-black text-yellow-500 border-2 border-yellow-400 hover:bg-red-600 hover:text-white">
+              বিস্তারিত জানুন
+            </button>
+          </div>
         </div>
 
+        {/* Job Assistance */}
         <div className="card bg-red-600 text-white shadow-xl p-6">
           <h3 className="text-2xl font-bold">💼 চাকরির সুযোগ</h3>
           <p className="mt-2">
             আমাদের রিক্রুটারদের মাধ্যমে **জার্মানিতে নিশ্চিত চাকরির ব্যবস্থা**।
           </p>
+          <div className="mt-4 text-center">
+            <button className="btn bg-black text-yellow-500 border-2 border-yellow-400 hover:bg-yellow-500 hover:text-black">
+              বিস্তারিত জানুন
+            </button>
+          </div>
         </div>
 
+        {/* Accommodation Assistance */}
         <div className="card bg-black text-yellow-500 shadow-xl p-6">
           <h3 className="text-2xl font-bold">🏠 বাসস্থানের ব্যবস্থা</h3>
           <p className="mt-2">
             **নিরাপদ ও সাশ্রয়ী আবাসনের ব্যবস্থা** করতে আমাদের বিশেষ সহায়তা।
           </p>
+          <div className="mt-4 text-center">
+            <button className="btn bg-yellow-500 text-black border-2 border-black hover:bg-red-600 hover:text-white">
+              বিস্তারিত জানুন
+            </button>
+          </div>
         </div>
 
+        {/* Visa Consultation */}
         <div className="card bg-yellow-500 text-black shadow-xl p-6">
           <h3 className="text-2xl font-bold">📝 ভিসা পরামর্শ</h3>
           <p className="mt-2">
             **ভিসা আবেদন ও প্রসেসিং** নিয়ে সঠিক নির্দেশনা ও পরামর্শ।
           </p>
+          <div className="mt-4 text-center">
+            <button className="btn bg-black text-yellow-500 border-2 border-yellow-400 hover:bg-red-600 hover:text-white">
+              বিস্তারিত জানুন
+            </button>
+          </div>
         </div>
 
+        {/* Career Consultation */}
         <div className="card bg-red-600 text-white shadow-xl p-6">
           <h3 className="text-2xl font-bold">🎯 ক্যারিয়ার পরামর্শ</h3>
           <p className="mt-2">
             জার্মানিতে **উচ্চশিক্ষা ও ক্যারিয়ারের পরিকল্পনা** নিয়ে পেশাদার
             গাইডলাইন।
           </p>
+          <div className="mt-4 text-center">
+            <button className="btn bg-black text-yellow-500 border-2 border-yellow-400 hover:bg-yellow-500 hover:text-black">
+              বিস্তারিত জানুন
+            </button>
+          </div>
         </div>
 
+        {/* Personalized Support */}
         <div className="card bg-black text-yellow-500 shadow-xl p-6">
           <h3 className="text-2xl font-bold">🤝 ব্যক্তিগত সহায়তা</h3>
           <p className="mt-2">
             **আপনার নির্দিষ্ট চাহিদা অনুযায়ী সম্পূর্ণ সহায়তা প্রদান**।
           </p>
+          <div className="mt-4 text-center">
+            <button className="btn bg-yellow-500 text-black border-2 border-black hover:bg-red-600 hover:text-white">
+              বিস্তারিত জানুন
+            </button>
+          </div>
         </div>
       </div>
 
