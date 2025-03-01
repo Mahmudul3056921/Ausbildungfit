@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="relative w-full">
       {/* Moving Text Announcement */}
@@ -13,56 +15,40 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <div className="navbar bg-base-100 shadow-md">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+      <div className="navbar bg-base-100 shadow-md px-4">
+        <div className="navbar-start flex items-center">
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden btn btn-ghost"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul>
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </button>
+
+          {/* Logo (Shrinks on Mobile) */}
           <img
             src="/Ausbildungfit.png"
             alt="Logo"
-            className="h-18 w-auto max-w-[180px]"
+            className="w-36 sm:w-28 md:w-36 lg:w-40 transition-all duration-300"
           />
         </div>
+
+        {/* Desktop Menu */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 space-x-4">
             <li>
               <Link to={"/"}>Home</Link>
             </li>
@@ -93,10 +79,60 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+
+        {/* Login Button */}
         <div className="navbar-end">
           <a className="btn btn-warning text-black opacity-75">LOGIN</a>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="absolute top-[100%] left-0 w-full bg-base-100 shadow-lg z-50">
+          <ul className="menu menu-vertical p-4 space-y-2 text-lg">
+            <li>
+              <Link to={"/"} onClick={() => setIsMenuOpen(false)}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to={"/about"} onClick={() => setIsMenuOpen(false)}>
+                ABOUT US
+              </Link>
+            </li>
+            <li>
+              <details>
+                <summary>VISA SERVICES</summary>
+                <ul className="p-2">
+                  <li>
+                    <Link to={"/services"} onClick={() => setIsMenuOpen(false)}>
+                      Job Seeking
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={"/services"} onClick={() => setIsMenuOpen(false)}>
+                      Work Visa
+                    </Link>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <Link to={"/ausbildung"} onClick={() => setIsMenuOpen(false)}>
+                AUSBILDUNG
+              </Link>
+            </li>
+            <li>
+              <Link to={"/recruiter"} onClick={() => setIsMenuOpen(false)}>
+                RECRUITERS
+              </Link>
+            </li>
+            <li>
+              <a onClick={() => setIsMenuOpen(false)}>STUDENTS</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
