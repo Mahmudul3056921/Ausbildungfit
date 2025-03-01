@@ -3,100 +3,99 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 ">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <div className="relative w-full">
+      {/* Moving Text Announcement */}
+      <div className="w-full bg-red-600 text-yellow-500 py-2 overflow-hidden">
+        <div className="whitespace-nowrap animate-marquee text-lg font-semibold">
+          Our next batch starts on April. Registration ends on March 25 | Our
+          next batch starts on April. Registration ends on March 25 |
+        </div>
+      </div>
+
+      {/* Navbar */}
+      <div className="navbar bg-base-100 shadow-md">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+              <li>
+                <a>Item 1</a>
+              </li>
+              <li>
+                <a>Parent</a>
+                <ul className="p-2">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Item 3</a>
+              </li>
+            </ul>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
+          <img
+            src="/Ausbildungfit.png"
+            alt="Logo"
+            className="h-18 w-auto max-w-[180px]"
+          />
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <Link to={"/about"}>ABOUT US</Link>
             </li>
             <li>
-              <a>Item 3</a>
+              <details>
+                <summary>VISA SERVICES</summary>
+                <ul className="p-2">
+                  <li>
+                    <Link to={"/services"}>Job Seeking</Link>
+                  </li>
+                  <li>
+                    <Link to={"/services"}>Work Visa</Link>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <Link to={"/ausbildung"}>AUSBILDUNG</Link>
+            </li>
+            <li>
+              <Link to={"/recruiter"}>RECRUITERS</Link>
+            </li>
+            <li>
+              <a>STUDENTS</a>
             </li>
           </ul>
         </div>
-        <img
-          src="/Ausbildungfit.png"
-          alt="Logo"
-          className="h-18 w-auto max-w-[180px]"
-        />
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link to={"/"}>
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link to={"/about"}>
-              <a>ABOUT US</a>
-            </Link>
-          </li>
-          <li>
-            <details>
-              <summary>VISA SERVICES</summary>
-              <ul className="p-2">
-                <li>
-                  <Link to={"/services"}>
-                    <a>Job Seeking</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/services"}>
-                    <a>Work Visa</a>
-                  </Link>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <Link to={"/ausbildung"}>
-              <a>AUSBILDUNG</a>
-            </Link>
-          </li>
-          <li>
-            <Link to={"/recruiter"}>
-              <a>RECRUITERS</a>
-            </Link>
-          </li>
-          <li>
-            <a>STUDENTS</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn btn-warning text-black opacity-75">LOGIN</a>
+        <div className="navbar-end">
+          <a className="btn btn-warning text-black opacity-75">LOGIN</a>
+        </div>
       </div>
     </div>
   );

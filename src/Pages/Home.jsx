@@ -2,6 +2,8 @@ import React from "react";
 import Banner from "../Home/Banner";
 import Services from "./Services";
 import Companies from "./Companies";
+import Languages from "./Languages";
+import Steps from "./Steps";
 
 const Home = () => {
   return (
@@ -11,7 +13,9 @@ const Home = () => {
         <Banner />
       </section>
       <Services></Services>
+      <Languages></Languages>
       <Companies></Companies>
+      <Steps></Steps>
     </div>
   );
 };

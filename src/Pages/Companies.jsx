@@ -2,11 +2,11 @@ import React from "react";
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import img1 from "../assets/home/banner1.png";
-import img2 from "../assets/home/banner1.png";
-import img3 from "../assets/home/banner1.png";
-import img4 from "../assets/home/banner1.png";
-import img5 from "../assets/home/banner1.png";
+import img1 from "../assets/Logos/img4.png";
+import img2 from "../assets/Logos/img2.png";
+import img3 from "../assets/Logos/img3.png";
+import img4 from "../assets/Logos/img4.png";
+import img5 from "../assets/Logos/img2.png";
 
 const Companies = () => {
   return (
