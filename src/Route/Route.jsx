@@ -5,6 +5,7 @@ import About from "../Pages/About";
 import ServiceList from "../Pages/ServiceList";
 import Ausbildung from "../Pages/Ausbildung";
 import Recruiters from "../Pages/Recruiters";
+import Jobseeking from "../Pages/Jobseeking";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/recruiter",
         element: <Recruiters></Recruiters>,
+      },
+      {
+        path: "/jobseeker",
+        element: <Jobseeking></Jobseeking>,
       },
     ],
   },

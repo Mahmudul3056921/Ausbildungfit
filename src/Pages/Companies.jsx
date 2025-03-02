@@ -2,11 +2,14 @@ import React from "react";
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import img1 from "../assets/Logos/img4.png";
+import img1 from "../assets/Logos/img1.png";
 import img2 from "../assets/Logos/img2.png";
 import img3 from "../assets/Logos/img3.png";
-import img4 from "../assets/Logos/img4.png";
-import img5 from "../assets/Logos/img2.png";
+import img4 from "../assets/Logos/img4.webp";
+import img5 from "../assets/Logos/img5.png";
+import img6 from "../assets/Logos/img6.png";
+import img7 from "../assets/Logos/img7.svg";
+import img8 from "../assets/Logos/img8.png";
 
 const Companies = () => {
   return (
@@ -60,6 +63,27 @@ const Companies = () => {
           <img
             className="h-16 w-16 object-contain"
             src={img5}
+            alt="Company 5"
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <img
+            className="h-16 w-16 object-contain"
+            src={img6}
+            alt="Company 5"
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <img
+            className="h-16 w-16 object-contain"
+            src={img7}
+            alt="Company 5"
+          />
+        </SplideSlide>
+        <SplideSlide>
+          <img
+            className="h-16 w-16 object-contain"
+            src={img8}
             alt="Company 5"
           />
         </SplideSlide>

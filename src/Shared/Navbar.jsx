@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisaOpen, setIsVisaOpen] = useState(false);
 
   return (
     <div className="relative w-full">
@@ -55,19 +56,30 @@ const Navbar = () => {
             <li>
               <Link to={"/about"}>ABOUT US</Link>
             </li>
-            <li>
-              <details>
-                <summary>VISA SERVICES</summary>
-                <ul className="p-2">
-                  <li>
-                    <Link to={"/services"}>Job Seeking</Link>
+
+            {/* VISA SERVICES Hover Dropdown */}
+            <li
+              className="relative"
+              onMouseEnter={() => setIsVisaOpen(true)}
+              onMouseLeave={() => setIsVisaOpen(false)}
+            >
+              <a className="cursor-pointer">VISA SERVICES</a>
+              {isVisaOpen && (
+                <ul className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg p-2">
+                  <li className="hover:bg-gray-200 rounded-md">
+                    <Link to={"/jobseeker"} className="block px-4 py-2">
+                      Job Seeking
+                    </Link>
                   </li>
-                  <li>
-                    <Link to={"/services"}>Work Visa</Link>
+                  <li className="hover:bg-gray-200 rounded-md">
+                    <Link to={"/services"} className="block px-4 py-2">
+                      Work Visa
+                    </Link>
                   </li>
                 </ul>
-              </details>
+              )}
             </li>
+
             <li>
               <Link to={"/ausbildung"}>AUSBILDUNG</Link>
             </li>
@@ -100,12 +112,17 @@ const Navbar = () => {
                 ABOUT US
               </Link>
             </li>
+
+            {/* Mobile VISA SERVICES Dropdown */}
             <li>
-              <details>
+              <details open>
                 <summary>VISA SERVICES</summary>
                 <ul className="p-2">
                   <li>
-                    <Link to={"/services"} onClick={() => setIsMenuOpen(false)}>
+                    <Link
+                      to={"/jobseeker"}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
                       Job Seeking
                     </Link>
                   </li>
@@ -117,6 +134,7 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
+
             <li>
               <Link to={"/ausbildung"} onClick={() => setIsMenuOpen(false)}>
                 AUSBILDUNG
