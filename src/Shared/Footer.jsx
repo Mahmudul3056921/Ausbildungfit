@@ -38,7 +38,7 @@ const Footer = () => {
           </svg>
         </a>
         <a
-          href="https://www.facebook.com/profile.php?id=61573897525744&sk=about_contact_and_basic_info"
+          href="https://www.youtube.com/@Ausbildungfit"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-75"
