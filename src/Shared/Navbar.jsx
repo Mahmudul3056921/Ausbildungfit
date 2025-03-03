@@ -10,8 +10,11 @@ const Navbar = () => {
       {/* Moving Text Announcement */}
       <div className="w-full bg-red-600 text-yellow-500 py-2 overflow-hidden">
         <div className="whitespace-nowrap animate-marquee text-lg font-semibold">
-          Our next batch starts on April. Registration ends on March 25 | Our
-          next batch starts on April. Registration ends on March 25 |
+          Limited Seats Available! Our Next Batch Begins on April 15th. Complete
+          Your Registration by March 25th. Contact us on WhatsApp: +49 176
+          30169377. || Limited Seats Available! Our Next Batch Begins on April
+          15th. Complete Your Registration by March 25th. Contact us on
+          WhatsApp: +49 176 30169377.
         </div>
       </div>
 
@@ -71,11 +74,6 @@ const Navbar = () => {
                       Job Seeking
                     </Link>
                   </li>
-                  {/* <li className="hover:bg-gray-200 rounded-md">
-                    <Link to={"/services"} className="block px-4 py-2">
-                      Work Visa
-                    </Link>
-                  </li> */}
                 </ul>
               )}
             </li>
@@ -86,18 +84,18 @@ const Navbar = () => {
             <li>
               <Link to={"/recruiter"}>RECRUITERS</Link>
             </li>
-            <Link to={"/contact"}>
-              <li>
-                <a>CONTACT US</a>
-              </li>
-            </Link>
+            <li>
+              <Link to={"/contact"}>CONTACT US</Link>
+            </li>
           </ul>
         </div>
 
         {/* Login Button */}
         <div className="navbar-end">
           <Link to={"/login"}>
-            <a className="btn btn-warning text-black opacity-75">LOGIN</a>
+            <button className="btn btn-warning text-black opacity-75">
+              LOGIN
+            </button>
           </Link>
         </div>
       </div>
@@ -130,11 +128,6 @@ const Navbar = () => {
                       Job Seeking
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link to={"/services"} onClick={() => setIsMenuOpen(false)}>
-                      Work Visa
-                    </Link>
-                  </li> */}
                 </ul>
               </details>
             </li>
@@ -150,7 +143,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a onClick={() => setIsMenuOpen(false)}>Contact Us</a>
+              <Link to={"/contact"} onClick={() => setIsMenuOpen(false)}>
+                CONTACT US
+              </Link>
             </li>
           </ul>
         </div>

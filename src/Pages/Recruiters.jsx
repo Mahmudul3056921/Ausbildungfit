@@ -128,7 +128,7 @@ const Recruiters = () => {
       </div>
 
       {/* Testimonials Section */}
-      <div className="mt-12">
+      {/* <div className="mt-12">
         <h3 className="text-3xl font-bold text-black text-center mb-6">
           What Our Recruiters Say 💼
         </h3>
@@ -149,7 +149,7 @@ const Recruiters = () => {
             ))}
           </Slider>
         </div>
-      </div>
+      </div> */}
 
       {/* Call to Action */}
       <div className="flex justify-center mt-12">
