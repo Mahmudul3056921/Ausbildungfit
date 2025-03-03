@@ -71,11 +71,11 @@ const Navbar = () => {
                       Job Seeking
                     </Link>
                   </li>
-                  <li className="hover:bg-gray-200 rounded-md">
+                  {/* <li className="hover:bg-gray-200 rounded-md">
                     <Link to={"/services"} className="block px-4 py-2">
                       Work Visa
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               )}
             </li>
@@ -86,15 +86,19 @@ const Navbar = () => {
             <li>
               <Link to={"/recruiter"}>RECRUITERS</Link>
             </li>
-            <li>
-              <a>STUDENTS</a>
-            </li>
+            <Link to={"/contact"}>
+              <li>
+                <a>CONTACT US</a>
+              </li>
+            </Link>
           </ul>
         </div>
 
         {/* Login Button */}
         <div className="navbar-end">
-          <a className="btn btn-warning text-black opacity-75">LOGIN</a>
+          <Link to={"/login"}>
+            <a className="btn btn-warning text-black opacity-75">LOGIN</a>
+          </Link>
         </div>
       </div>
 
@@ -126,11 +130,11 @@ const Navbar = () => {
                       Job Seeking
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to={"/services"} onClick={() => setIsMenuOpen(false)}>
                       Work Visa
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </details>
             </li>
@@ -146,7 +150,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a onClick={() => setIsMenuOpen(false)}>STUDENTS</a>
+              <a onClick={() => setIsMenuOpen(false)}>Contact Us</a>
             </li>
           </ul>
         </div>

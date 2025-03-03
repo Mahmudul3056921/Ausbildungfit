@@ -6,6 +6,8 @@ import ServiceList from "../Pages/ServiceList";
 import Ausbildung from "../Pages/Ausbildung";
 import Recruiters from "../Pages/Recruiters";
 import Jobseeking from "../Pages/Jobseeking";
+import Contactus from "../Pages/Contactus";
+import Login from "../Pages/Login";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +37,14 @@ export const router = createBrowserRouter([
       {
         path: "/jobseeker",
         element: <Jobseeking></Jobseeking>,
+      },
+      {
+        path: "/contact",
+        element: <Contactus></Contactus>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
     ],
   },
