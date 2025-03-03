@@ -11,10 +11,10 @@ const Navbar = () => {
       <div className="w-full bg-red-600 text-yellow-500 py-2 overflow-hidden">
         <div className="whitespace-nowrap animate-marquee text-lg font-semibold">
           Limited Seats Available! Our Next Batch Begins on April 15th. Complete
-          Your Registration by March 25th. Contact us on WhatsApp: +49 176
-          30169377. || Limited Seats Available! Our Next Batch Begins on April
+          Your Registration by March 25th. Contact us on WhatsApp: +49
+          15151823782 || Limited Seats Available! Our Next Batch Begins on April
           15th. Complete Your Registration by March 25th. Contact us on
-          WhatsApp: +49 176 30169377.
+          WhatsApp: +49 15151823782.
         </div>
       </div>
 

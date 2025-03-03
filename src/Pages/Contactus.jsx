@@ -68,7 +68,7 @@ const Contactus = () => {
             📍 **অফিস:** AusbildungFit, Reinickendorf Provinzstr. 115 13409
             Berlin, Germany
           </p>
-          <p className="text-gray-700 mb-3">📞 **ফোন:** +49 176 30169377</p>
+          <p className="text-gray-700 mb-3">📞 **ফোন:** +49 15151823782</p>
           <p className="text-gray-700 mb-3">
             📧 **ইমেইল:** info@ausbildungfit.com
           </p>
