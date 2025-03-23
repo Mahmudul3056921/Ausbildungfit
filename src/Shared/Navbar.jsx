@@ -10,11 +10,9 @@ const Navbar = () => {
       {/* Moving Text Announcement */}
       <div className="w-full bg-red-600 text-yellow-500 py-2 overflow-hidden">
         <div className="whitespace-nowrap animate-marquee text-lg font-semibold">
-          Limited Seats Available! Our Next Batch Begins on April 15th. Complete
-          Your Registration by March 25th. Contact us on WhatsApp: +49
-          15151823782 || Limited Seats Available! Our Next Batch Begins on April
-          15th. Complete Your Registration by March 25th. Contact us on
-          WhatsApp: +49 15151823782.
+          আমাদের বর্তমান A1 ব্যাচ চলছে, এবং পরবর্তী A1 ব্যাচ ঈদের পরে ১০ই এপ্রিল
+          শুরু হবে। রেজিস্ট্রেশন মিস করার আগেই আমাদের সাথে যোগাযোগ করুন! ||
+          হোয়াটসঅ্যাপে যোগাযোগ করুন: +49 15151823782
         </div>
       </div>
 
