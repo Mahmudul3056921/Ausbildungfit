@@ -59,7 +59,7 @@ const Navbar = () => {
             </li>
 
             {/* VISA SERVICES Hover Dropdown */}
-            <li
+            {/* <li
               className="relative"
               onMouseEnter={() => setIsVisaOpen(true)}
               onMouseLeave={() => setIsVisaOpen(false)}
@@ -74,14 +74,14 @@ const Navbar = () => {
                   </li>
                 </ul>
               )}
-            </li>
+            </li> */}
 
             <li>
               <Link to={"/ausbildung"}>AUSBILDUNG</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={"/recruiter"}>RECRUITERS</Link>
-            </li>
+            </li> */}
             <li>
               <Link to={"/contact"}>CONTACT US</Link>
             </li>
@@ -114,7 +114,7 @@ const Navbar = () => {
             </li>
 
             {/* Mobile VISA SERVICES Dropdown */}
-            <li>
+            {/* <li>
               <details open>
                 <summary>VISA SERVICES</summary>
                 <ul className="p-2">
@@ -128,18 +128,18 @@ const Navbar = () => {
                   </li>
                 </ul>
               </details>
-            </li>
+            </li> */}
 
             <li>
               <Link to={"/ausbildung"} onClick={() => setIsMenuOpen(false)}>
                 AUSBILDUNG
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={"/recruiter"} onClick={() => setIsMenuOpen(false)}>
                 RECRUITERS
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to={"/contact"} onClick={() => setIsMenuOpen(false)}>
                 CONTACT US

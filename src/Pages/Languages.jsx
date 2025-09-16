@@ -17,7 +17,7 @@ const Languages = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
         {[
           {
-            level: "🅰️ A1 কোর্স",
+            level: " A1 কোর্স",
             price: "৳১০,০০০",
             oldPrice: "৳১২,০০০",
             duration: "1 মাস",
@@ -25,7 +25,7 @@ const Languages = () => {
             live: "সপ্তাহে 3 দিন",
           },
           {
-            level: "🅰️ A2 কোর্স",
+            level: " A2 কোর্স",
             price: "৳১০,০০০",
             oldPrice: "৳১২,০০০",
             duration: "1 মাস",
@@ -33,7 +33,7 @@ const Languages = () => {
             live: "সপ্তাহে 3 দিন",
           },
           {
-            level: "🅱️ B1 কোর্স",
+            level: " B1 কোর্স",
             price: "৳১৫,০০০",
             oldPrice: "৳১৮,০০০",
             duration: "2 মাস",
@@ -41,7 +41,7 @@ const Languages = () => {
             live: "সপ্তাহে 3 দিন",
           },
           {
-            level: "🅱️ B2 কোর্স",
+            level: " B2 কোর্স",
             price: "৳১৫,০০০",
             oldPrice: "৳১৮,০০০",
             duration: "2 মাস",
